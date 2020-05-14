@@ -2,7 +2,8 @@ module.exports = {
     root: true,
     env: {
         browser: true,
-        node: true
+        node: true,
+        es6: true
     },
     parserOptions: {
         parser: '@typescript-eslint/parser',
@@ -12,10 +13,13 @@ module.exports = {
     extends: [
         'eslint:recommended',
         'plugin:@typescript-eslint/recommended',
+        'plugin:prettier/recommended',
+        'prettier/@typescript-eslint',
         'react-app'
     ],
     plugins: [
-        '@typescript-eslint'
+        '@typescript-eslint',
+        'prettier'
     ],
     // add your custom rules here
     rules: {
